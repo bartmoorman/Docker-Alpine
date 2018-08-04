@@ -1,4 +1,4 @@
-FROM alpine:edge
+FROM alpine:3.7
 
 ENV TZ="America/Denver" \
     LANG="en_US.UTF-8" \
