@@ -5,5 +5,5 @@ docker run \
 --tty \
 --name alpine \
 --rm \
-bmoorman/alpine:armhf-latest sh
+bmoorman/alpine:latest sh
 ```
