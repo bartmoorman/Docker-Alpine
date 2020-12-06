@@ -15,6 +15,6 @@ build:
   tags:
     - docker
   script:
-    - docker build --pull --tag ${DOCKER_HUB_USERNAME}/${CI_PROJECT_NAME,,}:${CI_COMMIT_REF_SLUG} --tag ${CI_REGISTRY_IMAGE}:${CI_COMMIT_REF_SLUG} .
-    - echo docker push ${DOCKER_HUB_USERNAME}/${CI_PROJECT_NAME,,}:${CI_COMMIT_REF_SLUG}
+    - docker build --pull --tag ${DOCKER_HUB_USERNAME}/${CI_PROJECT_NAME}:${CI_COMMIT_REF_SLUG} --tag ${CI_REGISTRY_IMAGE}:${CI_COMMIT_REF_SLUG} .
+    - echo docker push ${DOCKER_HUB_USERNAME}/${CI_PROJECT_NAME}:${CI_COMMIT_REF_SLUG}
     - echo docker push ${CI_REGISTRY_IMAGE}:${CI_COMMIT_REF_SLUG}
