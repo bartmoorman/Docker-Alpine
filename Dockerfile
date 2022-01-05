@@ -5,6 +5,7 @@ ENV TZ=America/Denver \
     LC_ALL=en_US.UTF-8 \
     LANGUAGE=en_US.UTF-8
 
-RUN apk add --no-cache \
+RUN apk upgrade --no-cache \
+ && apk add --no-cache \
     shadow \
     tzdata
