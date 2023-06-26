@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM alpine:3.17
 
 ENV TZ=America/Denver \
     LANG=en_US.UTF-8 \
